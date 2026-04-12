@@ -1,4 +1,4 @@
-﻿name: walking_buddy
+name: walking_buddy
 description: A Flutter app for logging walks with SQLite storage and beautiful UI/UX.
 publish_to: 'none'
 
@@ -11,9 +11,15 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.2
+  google_fonts: ^6.2.1
   sqflite: ^2.2.8+4
+  sqflite_common_ffi: ^2.2.8+4
   path: ^1.8.3
   intl: ^0.19.0
+  google_maps_flutter: ^2.5.0
+  http: ^1.1.0
+  flutter_dotenv: ^5.1.0
+  share_plus: ^7.1.0
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +28,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - .env
+    - .env.example
